@@ -7,7 +7,8 @@ defmodule PrometheusEx.Mixfile do
     [
       app: :prometheus_ex,
       version: @version,
-      elixir: "~> 1.6",
+      elixir: "~> 1.7",
+      elixirc_options: [warnings_as_errors: true],
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       description: description(),
